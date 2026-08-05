@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package acess;
 
 import credentials.dbProf;
@@ -12,24 +8,37 @@ import java.util.Scanner;
  * @author brayan
  */
 public class AcessProfessor {
+
     credentials.dbProf db = new dbProf();
-    public AcessProfessor(){
+    private String Rp;
+    private String senha;
+
+    public AcessProfessor() {
         Scanner sc = new Scanner(System.in);
-        
+
         System.out.println("Digite seu Rp");
-        String Rp = sc.nextLine();
+        Rp = sc.nextLine();
         System.out.println("Digite sua senha");
-        String senha = sc.nextLine();
-        //comparar com o db
-        
-        
-        
-        
+        senha = sc.nextLine();
+        sc.close();
+        comparar(Rp, senha);
     }
-    public void comparar(String Rp,String senha){
-        
-        
+
+    public void comparar(String rp, String senha) {
+        Scanner sc = new Scanner(System.in);
+        short s;
+        if (db.comparar(rp, senha) == '1') {
+            System.out.println("Acesso permitido");
+            //funções///adicionar nota, ver notas
+            System.out.println("(1) Ver notas dos Alunos");
+            System.out.println("(2) Alterar notas do Aluno");
+            s = sc.nextShort();
+            if (s == 1) {
+                
+            }
+            if (s == 2) {
+                
+            }
+        }
     }
-    
-    
 }

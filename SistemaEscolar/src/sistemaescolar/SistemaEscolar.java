@@ -20,7 +20,7 @@ public class SistemaEscolar {
                 new acess.AcessAluno();
                 break;
             case "2":
-
+                new acess.AcessProfessor();
                 break;
             case "3":
 

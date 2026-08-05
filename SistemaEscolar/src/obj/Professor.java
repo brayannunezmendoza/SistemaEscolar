@@ -27,6 +27,7 @@ public class Professor {
         this.name = nome;
         this.cpf = cpf;
         this.rp = rp;
+        this.senha = senha;
     }
 
     public String getName() {
