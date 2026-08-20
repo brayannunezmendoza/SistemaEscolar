@@ -4,22 +4,29 @@
  */
 package obj;
 
-
 /**
  *
  * @author brayan
  */
 public class Aluno {
 
-    private String nome, ra, senha, nomeMateria;
-    private int nota;
+    private String id;
+    private String ra;
+    private String nome;
 
-//    public void addAluno(String name) {
-//        //gerar ra do aluno automaticamente
-//        Random r = new Random();
-//        String re = String.format("%08d", r.longs(0, 99999999));
-//    }
-    public Aluno(String name, String ra, String senha) {
+    public Aluno(String id, String nome,String ra) {
+        this.id = id;
+        this.nome = nome;
+        this.ra=ra;
+       
+    }
+
+    public String getId(){return id;};
+    public String getNome(){return nome;};
+    public String getRa(){return ra;};
+    //public String getCpf(){return cpf;};
+    
+    /*public Aluno(String name, String ra, String senha) {
 
         this.nome = name;
         this.ra = ra;
@@ -56,6 +63,5 @@ public class Aluno {
 
     public String getRa() {
         return ra;
-    }
-
+    }*/
 }

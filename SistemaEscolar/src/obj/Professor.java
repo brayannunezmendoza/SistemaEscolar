@@ -12,22 +12,22 @@ import java.util.Random;
  */
 public class Professor {
 
+    private String id;
     private String name;
     private String cpf;
     private String rp;
     private String senha;
 
-//    public void addProfessor(String name, String cpf) {
-//        Random r = new Random();
-//        String re = String.format("%08d", r.nextLong(0, 99999999));
-    ////        professor(name, cpf, re);
-//    }
-
-    public Professor(String nome, String cpf, String rp, String senha) {
+    public Professor(String id, String nome, String cpf, String rp, String senha) {
+        this.id = id;
         this.name = nome;
         this.cpf = cpf;
         this.rp = rp;
         this.senha = senha;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public String getName() {

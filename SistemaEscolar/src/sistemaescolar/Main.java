@@ -4,6 +4,8 @@
  */
 package sistemaescolar;
 
+import java.util.Scanner;
+
 /**
  *
  * @author brayan
@@ -12,7 +14,6 @@ public class Main {
     public static void main(String[] args) {
         new SistemaEscolar();
     }
-    
 }
 
 
@@ -120,4 +121,4 @@ public class Main {
     public void verTabelaAluno() {
     }
 
-    */
+ */
