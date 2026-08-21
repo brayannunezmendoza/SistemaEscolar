@@ -8,7 +8,6 @@ import java.util.Scanner;
  *
  * @author brayan
  */
-import db.DbAluno;
 import db.DbProfessor;
 import obj.Aluno;
 import obj.Professor;
@@ -20,7 +19,7 @@ public class AcessProfessor {
     private String senha;
     private DbProfessor professor = new DbProfessor();
     private String[] mensagem;
-    private DbAluno aluno = new DbAluno();
+    // private DbAluno aluno = new DbAluno();
 
 //    private DbNotas notas;
 //    private DbAluno aluno;
@@ -44,7 +43,7 @@ public class AcessProfessor {
 
             switch (sc.next()) {
                 case "1":
-                    verListaAlunos();
+                   // verListaAlunos();
                     break;
                 case "2":
 
@@ -76,10 +75,10 @@ public class AcessProfessor {
         return new String[]{status, "professor desconhecido"};
     }
 
-    public void verListaAlunos() {
-        //lista dos alunos retornando apenas os nomes e Ras
-        for (Aluno aluno : aluno.getLista()) {
-            System.out.println("nome: " + aluno.getNome() + " | ra: " + aluno.getRa());
-        }
-    }
+//    public void verListaAlunos() {
+//        //lista dos alunos retornando apenas os nomes e Ras
+//        for (Aluno aluno : aluno.getLista()) {
+//            System.out.println("nome: " + aluno.getNome() + " | ra: " + aluno.getRa());
+//        }
+//    }
 }

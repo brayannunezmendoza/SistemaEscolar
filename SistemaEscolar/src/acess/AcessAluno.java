@@ -1,6 +1,5 @@
 package acess;
 
-import db.DbAluno;
 import java.util.Scanner;
 import db.dbEstudante;
 import obj.Estudante;
@@ -26,11 +25,14 @@ public class AcessAluno {
         String ra = sc.nextLine();
         System.out.println("Digite sua senha: ");
         String senha = sc.nextLine();
+        
         if (estudante.autenticacao(ra, senha) != null) {
             System.out.println("Acesso permitido");
             //verNota();
             System.out.println("Digite a opção desejada");
-            
+            System.out.println("(1)Ver minhas notas");
+            System.out.println("(2)Ver minhas informações");
+
             //1-ver todas as notas
             //1.2-ver nota de um bimeste especifico
             //1.3-ver nota de uma materia especifica
@@ -40,7 +42,7 @@ public class AcessAluno {
             //4-voltar
             //5-fechar
             System.out.println("(1)Ver todas as minhas notas");
-            
+
             String acessOk = sc.nextLine();
             acessoOk(acessOk);
         } else {
@@ -50,8 +52,39 @@ public class AcessAluno {
     }
 
     public void acessoOk(String code) {
-        
-        
+        Scanner s = new Scanner(System.in);
+        if (code.equals("1")) {
+            //NOTAS
+            
+            
+            
+            
+            
+            
+            
+            System.out.println("(1)para pesquisa de nota por bimestre");
+            //ordenar as notas em ordem cronologica e separada por materia
+            System.out.println("(2)para pesquisa de nota por materia");
+            System.out.println("(3)para pesquisa de nota ordem de chegada");
+            String c = s.nextLine();
+            notas(c);
+        }
+        if (code.equals("2")) {
+            //informações
+            //dados cadastrais do estudante
+            System.out.println("(1) Alterar dados");
+        }else{}
+
+    }
+
+    public void notas(String code) {
+        if (code.equals("1")) {}
+        if (code.equals("2")) {}
+        if (code.equals("3")) {}
+        else{}
+    }
+
+    public void minhasInformacoes() {
     }
 
 //    db.DbAluno db = new DbAluno();

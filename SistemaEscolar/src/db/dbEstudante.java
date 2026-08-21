@@ -4,11 +4,13 @@
  */
 package db;
 
+//separar o numero do id do ra, manterlos distintos//**
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Random;
 import obj.Estudante;
-import db.DbAluno;
+import db.DbALuno;
+//import db.DbAluno;
 
 /**
  *
@@ -17,7 +19,9 @@ import db.DbAluno;
 public class dbEstudante {
 
     private ArrayList<Estudante> db = new ArrayList<>();
-
+    private DbALuno dbAluno = new DbALuno();
+    
+    
     public dbEstudante() {
         addEstudante("Brayan", "12345678900", LocalDate.of(2006, 10, 19), "Ativo");
 
@@ -39,7 +43,10 @@ public class dbEstudante {
                 + "\nRa: " + idras
                 + "\nSenha de Login: " + senha
                 + "\nSituação Cadastral: " + situacaoCadastral);
-
+        
+        dbAluno.addAluno(idras, nome, idras);
+        
+        
         //sincronização de dados com outras listas
         //lista aluno,lista notas/
         //        System.out.println("Digite o nome: ");
