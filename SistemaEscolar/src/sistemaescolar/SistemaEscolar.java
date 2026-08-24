@@ -1,4 +1,5 @@
 package sistemaescolar;
+import db.DbNota;
 import java.util.Scanner;
 /**
  *
@@ -7,7 +8,10 @@ import java.util.Scanner;
 public class SistemaEscolar {
 
     public SistemaEscolar() {
-        p1();
+       // p1();
+       db.DbNota nota = new DbNota();
+       nota.addNota("00000000", "1", 10);
+       nota.mostrar_Notas("0", "Ingles");
     }
 
     public void p1() {

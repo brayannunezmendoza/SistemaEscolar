@@ -18,17 +18,16 @@ public class DbMateria {
     private ArrayList<Materia> db = new ArrayList<>();
 
     public DbMateria() {
-        addMateria("Matematica");
-        addMateria("Ingles");
-        addMateria("Portugues");
+        addMateria("Matematica","1");
+        addMateria("Ingles","2");
+        addMateria("Portugues","3");
     }
 
-    public void addMateria(String nome) {
-        Random id = new Random();
-        db.add(new Materia(id.nextInt(0, 99), nome));
+    public void addMateria(String nome,String id) {
+        db.add(new Materia(id, nome));
     }
 
-    public String nomeMateria(String id) {
+    public String consultar_Materia(String id) {
         String nome = "Não encontrado";
         for (Materia materia : db) {
             if (id.equals(materia.getId())) {

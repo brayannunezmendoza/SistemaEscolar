@@ -9,14 +9,14 @@ package obj;
  * @author braya
  */
 public class Materia {
-    private int id;
+    private String id;
     private String nome;
     
-    public Materia(int id,String nome){
+    public Materia(String id,String nome){
         this.id = id;
         this.nome = nome;
     }
-    public int getId(){return id;}
+    public String getId(){return id;}
     public String getNome(){return nome;}
     
 }

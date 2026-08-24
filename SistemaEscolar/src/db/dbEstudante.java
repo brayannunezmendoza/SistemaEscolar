@@ -9,8 +9,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Random;
 import obj.Estudante;
-import db.DbALuno;
-//import db.DbAluno;
+import db.DbAluno;
 
 /**
  *
@@ -19,7 +18,7 @@ import db.DbALuno;
 public class dbEstudante {
 
     private ArrayList<Estudante> db = new ArrayList<>();
-    private DbALuno dbAluno = new DbALuno();
+    private DbAluno db_Aluno = new DbAluno();
     
     
     public dbEstudante() {
@@ -33,7 +32,7 @@ public class dbEstudante {
         //verificar se não ha repetição de id;()
         //senha inicial sera o cpf, o estudante podera alterar no futuro;()
         String senha = cpf;
-        db.add(new Estudante(idras, idras, cpf, nome, dataNascimento, senha, situacaoCadastral));
+        db.add(new Estudante("00000000", idras, cpf, nome, dataNascimento, senha, situacaoCadastral));
         System.out.println("Estudante Cadastrado no Sistema");
         System.out.println("informações do Estudante : "
                 + "\nNome: " + nome
@@ -44,7 +43,7 @@ public class dbEstudante {
                 + "\nSenha de Login: " + senha
                 + "\nSituação Cadastral: " + situacaoCadastral);
         
-        dbAluno.addAluno(idras, nome, idras);
+        //dbAluno.addAluno(idras, nome, idras);
         
         
         //sincronização de dados com outras listas
