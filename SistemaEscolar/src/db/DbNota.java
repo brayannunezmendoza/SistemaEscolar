@@ -29,7 +29,7 @@ public class DbNota {
     public void addNota(String ra_Aluno, String id_Materia, double nota) {
         Random r_Nota = new Random();
         String id_Nota = String.valueOf(r_Nota.longs(0, 99999999));
-        String ra_Auno_Resultado = db_aluno.consulta_Aluno(ra_Aluno);
+        String ra_Auno_Resultado = db_aluno.consultar_Aluno(ra_Aluno);
         String nome_Materia_Resultado = db_Materia.consultar_Materia(id_Materia);
         db.add(new Nota(id_Nota, nome_Materia_Resultado, ra_Aluno, nota, "2026/10/19"));
     }
