@@ -1,5 +1,6 @@
 # Sistema Escolar
 
+
 # Sobre o Sistema
     Simular o sistema de uma escola para o uso dos alunos, professores e coordenadores
     Implementação de validação de dados
@@ -7,6 +8,7 @@
       Login e cadastro de novos alunos, professores e coordenadores
       Consulta de dados como notas e relatorios
       Agregação de novos dados
+
 
 # Entidades
     1 - Aluno
@@ -53,4 +55,9 @@
   Armazenamento de dados nas classes db.* com o uso de arraylist, com metodos de get e set
   Gerador de IDs em long com o Random
   Formatação dos IDs para serem formatados no formato de 8 caracteres e em String
+
+
+  # Ato 2
+
+  Modelagem de dados no MySQL WorkBench
   
