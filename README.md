@@ -11,9 +11,13 @@
 
 # Entidades
   1 - Aluno
+  
   2 - Professor
+  
   3 - Coordenador
+  
   4 - Materia
+  
   5 - Nota
 
 # Banco de Dados
