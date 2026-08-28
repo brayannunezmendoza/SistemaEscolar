@@ -37,37 +37,23 @@
 
   Estrutura do sistema com separação de classes com pastas
   
-  src
-  
-  ├── main
-  
-  │     └── main
-  
-  │
-  ├── obj
-  
-  │     ├── aluno
-  
-  │     ├── Professor
-  
-  │     ├── Cordenador
-  
-  │     ├── Materia
-  
-  │     └── Nota
-  
-  │
-  
-  └── db
-      ├── dbNota
-      
-      ├── dbMateria
-      
-      ├── dbAluno
-      
-      ├── dbProfessor
-      
-      └── dbCoordenador
+    src
+    ├── main
+    │     └── main
+    │
+    ├── obj
+    │     ├── aluno
+    │     ├── Professor
+    │     ├── Cordenador
+    │     ├── Materia
+    │     └── Nota
+    │
+    └── db
+        ├── dbNota
+        ├── dbMateria
+        ├── dbAluno
+        ├── dbProfessor
+        └── dbCoordenador
       
 
   Armazenamento de dados nas classes db.* com o uso de arraylist, com metodos de get e set
