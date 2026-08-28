@@ -19,35 +19,56 @@
   4 - Materia
   
   5 - Nota
+  
 
 # Banco de Dados
   MySql
+  
 
 # IDE
   Apache NetBeans
 
+
 # Linguagem de Programação
   Java
+  
 
 # Ato 1
+
   Estrutura do sistema com separação de classes com pastas
+  
   src
+  
   ├── main
-  │     └── main   
+  
+  │     └── main
+  
   │
   ├── obj
+  
   │     ├── aluno
+  
   │     ├── Professor
+  
   │     ├── Cordenador
+  
   │     ├── Materia
+  
   │     └── Nota
+  
   │
+  
   └── db
       ├── dbNota
+      
       ├── dbMateria
+      
       ├── dbAluno
+      
       ├── dbProfessor
+      
       └── dbCoordenador
+      
 
   Armazenamento de dados nas classes db.* com o uso de arraylist, com metodos de get e set
   Gerador de IDs em long com o Random
