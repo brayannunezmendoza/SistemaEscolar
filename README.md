@@ -60,8 +60,8 @@
   # Ato 2
 
   Modelagem de dados no MySQL WorkBench
-    
-    <img width="736" height="776" alt="image" src="https://github.com/user-attachments/assets/465b3c9a-35ef-4994-a91c-3cf4ca195539" />
+
+<img width="736" height="776" alt="image" src="https://github.com/user-attachments/assets/465b3c9a-35ef-4994-a91c-3cf4ca195539" />
 
   Diagrama inicial do banco de dados
 
