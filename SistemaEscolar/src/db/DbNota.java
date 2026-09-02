@@ -6,7 +6,7 @@ package db;
 
 import java.util.ArrayList;
 import obj.Nota;
-import db.DbAluno;
+import db.dbAluno;
 import db.DbMateria;
 import java.util.Random;
 
@@ -17,11 +17,11 @@ import java.util.Random;
 public class DbNota {
 
     private ArrayList<Nota> db = new ArrayList<>();
-    private DbAluno db_aluno;
+    private dbAluno db_aluno;
     private DbMateria db_Materia;
 
     public DbNota() {
-        db_aluno = new DbAluno();
+        db_aluno = new dbAluno();
         db_Materia = new DbMateria();
         addNota("00000000", "2", 7);
     }

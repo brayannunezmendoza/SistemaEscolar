@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Random;
 import obj.Estudante;
-import db.DbAluno;
+import db.dbAluno;
 
 /**
  *
@@ -18,7 +18,7 @@ import db.DbAluno;
 public class dbEstudante {
 
     private ArrayList<Estudante> db = new ArrayList<>();
-    private DbAluno db_Aluno = new DbAluno();
+    private dbAluno db_Aluno = new dbAluno();
     
     
     public dbEstudante() {
