@@ -8,6 +8,8 @@
       Login e cadastro de novos alunos, professores e coordenadores
       Consulta de dados como notas e relatorios
       Agregação de novos dados
+      Visualização de horários das aulas
+      
 
 
 # Entidades
@@ -16,6 +18,7 @@
     3 - Coordenador  
     4 - Materia
     5 - Nota
+    6 - Aula
   
 
 # Banco de Dados
@@ -30,8 +33,8 @@
   Java
   
 
-# Ato 1
-  Estrutura do sistema com separação de classes com pastas
+# 
+  Estrutura do sistema com separação de classes com pastas até o momento
   
     src
     ├── main
@@ -57,12 +60,13 @@
   Formatação dos IDs para serem formatados no formato de 8 caracteres e em String
 
 
-  # Ato 2
+  # 
 
   Modelagem de dados no MySQL WorkBench
+  
+  Diagrama inicial do banco de dados
 
 <img width="736" height="776" alt="image" src="https://github.com/user-attachments/assets/465b3c9a-35ef-4994-a91c-3cf4ca195539" />
 
-  Diagrama inicial do banco de dados
 
   
